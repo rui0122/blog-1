@@ -161,9 +161,7 @@ Update-MgDirectoryOnPremiseSynchronization `
 
 ### <span style="color: blue; ">Q:</span> Microsoft Entra 参加している端末にサインインしています。パスワードが切れているのに、端末にサインインできてしまうのですが、いつパスワード変更が求められますか？
 
-<span style="color: red; ">A:</span> 端末にログオンし、Windows のデスクトップを表示するところまでは、パスワードが切れていても実施できます。Azure ポータルや Microsoft 365 管理センター、Exchange Online など Entra ID と連携するクラウド上のリソースにサインインした時にパスワード変更が求められます。端末に UPN (例: user@contoso.onmicrosoft.com) などでサインインした場合には、端末ログオン後、右下に以下のメッセージが表示される動作を現時点で確認しております。こちらもパスワード変更の際の目安となりましたら幸いです。
-
-![](./comprehend-password-policy/comprehend-password-policy8.png)
+<span style="color: red; ">A:</span> 端末にログオンし、Windows のデスクトップを表示するところまでは、パスワードが切れていても実施できます。Azure ポータルや Microsoft 365 管理センター、Exchange Online など Entra ID と連携するクラウド上のリソースにサインインした時にパスワード変更が求められます。
 
 ### <span style="color: blue; ">Q:</span> テナントに設定されている値ではなく、各ユーザーのパスワード有効期限を知りたいです。方法はありますか？
 
