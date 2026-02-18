@@ -50,6 +50,6 @@ Microsoft Entra ID は、この変更の適用を 2026 年 3 月 27 日から開
 - [⁠Microsoft Entra News and Insights](https://www.microsoft.com/en-us/security/blog/products/microsoft-entra/)
 - [⁠⁠Microsoft Entra Blog](https://techcommunity.microsoft.com/category/microsoft-entra/blog/microsoft-entra-blog)
 - ⁠[Microsoft Entra のドキュメント](https://learn.microsoft.com/ja-jp/entra/)
-
 - [Microsoft Entra community](https://techcommunity.microsoft.com/t5/microsoft-entra/bd-p/Azure-Active-Directory)
+
 
