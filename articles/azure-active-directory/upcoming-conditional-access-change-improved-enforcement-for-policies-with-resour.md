@@ -1,6 +1,6 @@
 ---
 title: 今後の条件付きアクセスの変更 リソース除外を含むポリシーの適用強化
-date: 2026-02-19
+date: 2026-02-19 09:00
 tags:
     - Microsoft Entra ID
     - US Identity Blog
@@ -52,3 +52,4 @@ Microsoft Entra ID は、この変更の適用を 2026 年 3 月 27 日から開
 - ⁠[Microsoft Entra のドキュメント](https://learn.microsoft.com/ja-jp/entra/)
 
 - [Microsoft Entra community](https://techcommunity.microsoft.com/t5/microsoft-entra/bd-p/Azure-Active-Directory)
+
