@@ -36,7 +36,7 @@ Windows Hello for Business (略称 WHfB) を利用していない場合はこの
 
 1. 端末にサインインします。
 2. **ユーザー権限** でコマンド プロンプトを起動します (管理者として実行から起動しないようご注意ください)。
-3. 以下のコマンドを実行して、WHfB の情報をリセットします。 [certutil -deletehellocontainer コマンド実行時はこちらもご確認ください](../azure-active-directory/certutil-deletehellocontainer.md)
+3. 以下のコマンドを実行して WHfB の情報をリセットします。certutil -deletehellocontainer コマンド実行時は [こちら](../azure-active-directory/certutil-deletehellocontainer.md) もご確認ください。
 
     ```
     certutil -deletehellocontainer
@@ -177,3 +177,4 @@ WHfB を利用していなければこの手順は不要です。
 ## おわりに
 
 以上、MEHJ の再構成手順が運用の助けになると嬉しく思います。製品動作に関する正式な見解や回答については、お客様環境などを十分に把握したうえでサポート部門より提供しますので、ぜひ弊社サポート サービスをご利用ください。
+
