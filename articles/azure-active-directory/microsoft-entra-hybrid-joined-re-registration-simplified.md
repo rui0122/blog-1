@@ -15,6 +15,9 @@ toc:
 
 # Microsoft Entra ハイブリッド参加を再構成する (簡易版)
 
+> [!NOTE]
+> 2026 年 2 月 20 日更新: certutil -deletehellocontainer コマンドについて追記しました。
+
 こんにちは、Azure & Identity サポート チームの長谷川です。
 
 この記事では、対象デバイスの Microsoft Entra ハイブリッド参加を再構成する手順の簡易版を紹介します。
@@ -32,7 +35,7 @@ toc:
 
 1. 端末にサインインします。
 2. **ユーザー権限** でコマンド プロンプトを起動します (管理者として実行から起動しないようご注意ください)。
-3. 以下のコマンドを実行して、WHfB の情報をリセットします。
+3. 以下のコマンドを実行して、WHfB の情報をリセットします。 [certutil -deletehellocontainer コマンド実行時はこちらもご確認ください](../azure-active-directory/certutil-deletehellocontainer.md)
 
     ```
     certutil -deletehellocontainer
