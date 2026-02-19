@@ -9,6 +9,9 @@ tags:
 
 # Azure AD 参加後に有効になる Windows Hello for Business とその無効化方法について
 
+> [!NOTE]
+> 2026 年 2 月 20 日更新: certutil -deletehellocontainer コマンドについて追記しました。
+
 こんにちは、Azure & Identity サポート チームの中山です。
 
 昨今では、オンプレミス環境からクラウド環境へ随時移行を検討されている企業も多く、デバイスもオンプレミスの Active Directory で管理するのではなく、クラウド サービスである Azure AD と Microsoft Intune などの MDM で管理するといった方法も選択肢となっております。
@@ -160,7 +163,7 @@ Azure AD へデバイス登録すると同時に Microsoft Intune へも登録�
 
 2. ユーザー権限でコマンド プロンプトを起動します。 (管理者権限で起動しないでください)
 
-3. 以下のコマンドを実行し、Windows Hello for Business の設定情報を削除します。   
+3. 以下のコマンドを実行し、Windows Hello for Business の設定情報を削除します。 [certutil -deletehellocontainer コマンド実行時はこちらもご確認ください](../azure-active-directory/certutil-deletehellocontainer.md)
    ```PowerShell
    certutil -deletehellocontainer
    ```
@@ -176,3 +179,4 @@ Windows Hello for Business は、今後のパスワードレス時代のトレ�
 そういった際に、今回の内容が皆様の参考となりますと幸いです。
 
 ご不明点等がありましたら、是非弊社サポート サービスをご利用ください。
+
