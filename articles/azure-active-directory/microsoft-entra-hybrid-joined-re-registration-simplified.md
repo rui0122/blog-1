@@ -15,15 +15,17 @@ toc:
 
 # Microsoft Entra ハイブリッド参加を再構成する (簡易版)
 
+> [!NOTE]
+> 2026 年 2 月 20 日更新: certutil -deletehellocontainer コマンドについて追記しました。
+
 こんにちは、Azure & Identity サポート チームの長谷川です。
 
 この記事では、対象デバイスの Microsoft Entra ハイブリッド参加を再構成する手順の簡易版を紹介します。
 
-完全版は[こちら](../azure-active-directory/haadj-re-registration.md)に掲載されていますが、完全版ではオンプレミスの Active Directory サーバーへの管理アクセスが必要になります。
-しかしながら Active Directory サーバーへ管理アクセスしなくても Microsoft Entra ハイブリッド参加を再構成することができる場合があるため、完全版から Active Directory サーバーへの管理アクセスを除いた簡易版の手順を作成しました。
-まずこの簡易版を利用し、簡易版で状況が変わらなければ完全版を利用する、といった流れで活用いただければと思います。
+完全版は[こちら](../azure-active-directory/haadj-re-registration.md)に掲載されていますが、完全版ではオンプレミスの Active Directory サーバーへの管理アクセスが必要になります。しかしながら Active Directory サーバーへ管理アクセスしなくても Microsoft Entra ハイブリッド参加を再構成することができる場合があるため、完全版から Active Directory サーバーへの管理アクセスを除いた簡易版の手順を作成しました。まずこの簡易版を利用し、簡易版で状況が変わらなければ完全版を利用する、といった流れで活用いただければと思います。
 
 ## 1. 注意事項
+
 再度 Microsoft Entra ハイブリッド参加を構成するためには、そのデバイス上での管理者権限と、デバイスがオンプレミスの Active Directory およびインターネットの両方にアクセスできる環境 (社外にデバイスがある場合は、オンプレミス AD 環境への VPN 接続) が必要です。
 
 ## 2. 事前準備: Windows Hello for Business のリセット
@@ -32,7 +34,7 @@ toc:
 
 1. 端末にサインインします。
 2. **ユーザー権限** でコマンド プロンプトを起動します (管理者として実行から起動しないようご注意ください)。
-3. 以下のコマンドを実行して、WHfB の情報をリセットします。
+3. 以下のコマンドを実行して、WHfB の情報をリセットします。certutil -deletehellocontainer コマンド実行時は [こちら](../azure-active-directory/certutil-deletehellocontainer.md) もご確認ください。
 
     ```
     certutil -deletehellocontainer
@@ -96,7 +98,7 @@ Microsoft Entra ID から離脱し Microsoft Entra ハイブリッド参加を�
 
 **この手順は Intune 登録しなければ不要です。** また、反映に時間がかかることがあります。
 
-1.  [Azure Portal (portal.azure.com)] > [Microsoft Entra ID] > [デバイス] > [すべてのデバイス] で対象のデバイス オブジェクトの [MDM] の項目に値が入り [準拠している] が「はい」となっていることを確認します。
+1. [Azure Portal (portal.azure.com)] > [Microsoft Entra ID] > [デバイス] > [すべてのデバイス] で対象のデバイス オブジェクトの [MDM] の項目に値が入り [準拠している] が「はい」となっていることを確認します。
 2. [Microsoft Intune 管理センター (intune.microsoft.com)] > [デバイス] > [すべてのデバイス] から該当デバイスを検索し対象デバイスの [対応] の項目が「準拠している」となっていることを確認します。
 
 ## 6. 事後作業: WHfB の再プロビジョニング
