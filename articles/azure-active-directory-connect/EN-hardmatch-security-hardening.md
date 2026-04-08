@@ -49,7 +49,7 @@ Domain X on-premises user A -> Entra ID user A'<br>
 Domain Y on-premises user B
 
 After:<br>
-Domain X on-premises user A<>
+Domain X on-premises user A<br>
 Domain Y on-premises user B -> Entra ID user A'
 
 Hard match procedure:
