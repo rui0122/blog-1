@@ -44,12 +44,12 @@ Note: In this procedure, the sourceAnchor is assumed to be configured as the mS-
 
 Due to reasons such as on-premises AD forest migration or employee secondment, there may be cases where the on-premises user that serves as the synchronization source for an existing Entra ID user needs to be changed. In this scenario, for an existing user A' in Entra ID, the on-premises user serving as the synchronization source is switched from user A in domain X to user B in domain Y.
 
-Before:
-Domain X on-premises user A -> Entra ID user A'
+Before:<br>
+Domain X on-premises user A -> Entra ID user A'<br>
 Domain Y on-premises user B
 
-After:
-Domain X on-premises user A
+After:<br>
+Domain X on-premises user A<>
 Domain Y on-premises user B -> Entra ID user A'
 
 Hard match procedure:
